@@ -1,11 +1,11 @@
 <?php
-// Chargement manuel des fichiers nécessaires au fonctionnement de l'application
-require __DIR__ . '/../core/Router.php';           // Classe responsable de la gestion des routes
-require __DIR__ . '/../core/BaseController.php';  // Classe de base pour tous les contrôleurs
-require __DIR__ . '/../core/Database.php';        // Gestion de la connexion et des requêtes à la base de données
-require __DIR__ . '/../app/Controllers/HomeController.php';   // Contrôleur de la page d'accueil
-require __DIR__ . '/../app/Models/ArticleModel.php';          // Modèle pour la gestion des articles
-
+// // Chargement manuel des fichiers nécessaires au fonctionnement de l'application
+// require __DIR__ . '/../core/Router.php';           // Classe responsable de la gestion des routes
+// require __DIR__ . '/../core/BaseController.php';  // Classe de base pour tous les contrôleurs
+// require __DIR__ . '/../core/Database.php';        // Gestion de la connexion et des requêtes à la base de données
+// require __DIR__ . '/../app/Controllers/HomeController.php';   // Contrôleur de la page d'accueil
+// require __DIR__ . '/../app/Models/ArticleModel.php';          // Modèle pour la gestion des articles
+require __DIR__ . '/../vendor/autoload.php'; // Chargement automatique des classes via Composer
 // Importation des classes avec namespaces pour éviter les conflits de noms
 use Core\Router;
 use App\Controllers\HomeController;
