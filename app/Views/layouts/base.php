@@ -18,7 +18,7 @@
 
   <!-- Bonne pratique : rendre le site responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="/assets/global.css">
   <!-- (Optionnel) Ajout d’un peu de style basique -->
 
 </head>
