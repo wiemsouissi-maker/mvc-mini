@@ -13,7 +13,7 @@ class ArticleController extends BaseController
 
         $data = [
             "title" => "Mes articles DWM",
-            "article" => $articles->all()
+            "articles" => $articles->all()
         ];
         $this->render("article/index", $data);
     }
