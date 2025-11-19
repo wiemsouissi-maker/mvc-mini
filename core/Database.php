@@ -1,4 +1,5 @@
 <?php
+
 namespace Core;
 
 use PDO;
@@ -29,9 +30,10 @@ class Database
         // Si aucune connexion n'existe encore, on l'initialise
         if (!self::$pdo) {
             // Paramètres de connexion
-            $dsn = 'mysql:host=localhost;dbname=mvc;charset=utf8mb4';
+            $dsn = "mysql:host={$_ENV['DB_HOST']};dbname={$_ENV['DB_NAME']};charset=utf8mb4";
             $user = 'root';
             $pass = '';
+
 
             try {
                 // Création de l'instance PDO avec options
